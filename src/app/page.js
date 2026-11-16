@@ -21,24 +21,26 @@ export default function Home() {
 
 const [selectedImage, setSelectedImage] = useState(null);
 
+
 const galleryImages = [
   {
-    src: "/images/mill.jpg",
+    src: "/niranjan-rice-mill/images/mill.jpg",
     title: "Our Rice Mill Premises",
   },
   {
-    src: "/images/machinery1.jpg",
+    src: "/niranjan-rice-mill/images/machinery1.jpg",
     title: "Rice Processing Machinery",
   },
   {
-    src: "/images/machinery2.jpg",
+    src: "/niranjan-rice-mill/images/machinery2.jpg",
     title: "Inside Our Processing Unit",
   },
   {
-    src: "/images/ricebags.jpg",
+    src: "/niranjan-rice-mill/images/ricebags.jpg",
     title: "Rice Bags & Storage",
   },
 ];
+
 
 const nextImage = () => {
   setSelectedImage((current) =>
@@ -265,7 +267,7 @@ onClick={() => setMenuOpen((previous) => !previous)}
          
 <div className="group relative overflow-hidden rounded-2xl shadow-2xl">
   <img
-    src="/images/mill.jpg"
+    src="/niranjan-rice-mill/images/mill.jpg"
     alt="Niranjan Rice Mill premises"
     className="h-[420px] w-full object-cover transition-transform duration-700 group-hover:scale-105"
   />
@@ -313,19 +315,19 @@ onClick={() => setMenuOpen((previous) => !previous)}
    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
       {[
         {
-          image: "/images/machinery1.jpg",
+          image: "/niranjan-rice-mill/images/machinery1.jpg",
           title: "Rice Processing Machinery",
           description:
             "A closer look at the industrial machinery installed at our rice mill.",
         },
         {
-          image: "/images/machinery2.jpg",
+          image: "/niranjan-rice-mill/images/machinery2.jpg",
           title: "Inside Our Processing Unit",
           description:
             "Explore the equipment and processing infrastructure inside our mill.",
         },
         {
-          image: "/images/ricebags.jpg",
+          image: "/niranjan-rice-mill/images/ricebags.jpg",
           title: "Rice Bags & Storage",
           description:
             "View the rice bags and storage areas at our premises.",
