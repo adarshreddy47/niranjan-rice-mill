@@ -1,10 +1,9 @@
 
-const isProduction = process.env.NODE_ENV === "production";
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: isProduction ? "/niranjan-rice-mill" : "",
-  assetPrefix: isProduction ? "/niranjan-rice-mill/" : "",
+  basePath: "/niranjan-rice-mill",
+  assetPrefix: "/niranjan-rice-mill/",
   images: {
     unoptimized: true,
   },
