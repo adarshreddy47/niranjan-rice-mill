@@ -24,3 +24,110 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+
+/* Mobile responsiveness improvements */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Small mobile screens */
+@media (max-width: 640px) {
+  h1 {
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  section {
+    scroll-margin-top: 100px;
+  }
+}
+
+
+
+/* Niranjan Rice Mill mobile refinements */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Keep headings visible below the sticky header */
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+/* Comfortable spacing for small phones */
+@media (max-width: 640px) {
+  #home {
+    min-height: 620px;
+  }
+
+  #home h1 {
+    font-size: clamp(2.2rem, 7vw, 3.2rem);
+    line-height: 1.16;
+    overflow-wrap: break-word;
+  }
+
+  #home a {
+    width: 100%;
+  }
+}
+
+/* Respect reduced-motion accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+
+/* Facilities image sizing */
+#facilities .facility-image {
+  height: 176px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  #facilities .facility-image {
+    height: 192px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #facilities .facility-image {
+    height: 208px;
+  }
+}
+
